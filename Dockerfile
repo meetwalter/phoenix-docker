@@ -5,7 +5,7 @@ RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 ENV PATH=/root/.cargo/bin:$PATH
 
 RUN set -xe \
-  && curl -sL https://deb.nodesource.com/setup | bash - \
+  && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
   && apt-get update \
   && apt-get install -y --no-install-recommends nodejs \
   && apt-get autoremove -y --purge \
